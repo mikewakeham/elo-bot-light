@@ -2,7 +2,8 @@
 
 Clone repository:
 
-```https://github.com/mikewakeham/roblox-elo-bot
+```
+https://github.com/mikewakeham/roblox-elo-bot
 ```
 
 Navigate to directory:

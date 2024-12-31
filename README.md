@@ -17,7 +17,7 @@ Install dependencies:
 ```
 pip install -r requirements.txt
 ```
-# Syncing with google sheets
+# Syncing with google sheets API
 
 1. Go to google API website [https://console.cloud.google.com/](https://console.cloud.google.com/)
 2. In the top left corner, select "Select a project" then "NEW PROJECT"
@@ -45,4 +45,25 @@ Now create a google sheets with the following format for columns.
 (Line 15): creds = ServiceAccountCredentials.from_json_keyfile_name("GOOGLE API CREDENTIALS JSON FILE HERE", scope)
 ```
 
+# Discord API
 
+1. Go to discord API website [https://discord.com/developers/applications](https://discord.com/developers/applications)
+2. Select "New Application" then enter the name and select "Create"
+3. On the left sidebar, navigate to "Bot" and turn on
+   - "PUBLIC BOT"
+   - "PRESENCE INTENT"
+   - "SERVER MEMBERS INTENT"
+   - "MESSAGE CONTENT INTENT"
+4. For bot permissions, select "Administrator" and save changes
+5. To get your API token, stay on the Bot tab and press the "RESET TOKEN" button to get your token
+6. Copy the token and paste it into the last line of the bot.py file where it says "DISCORD API TOKEN HERE"
+
+```
+bot.run("DISCORD API TOKEN HERE")
+```
+   
+8. To add the bot to your server, first navigate to the OAuth2 tab on the left sidebar
+9. Go to the URL Generator and select "applications.commands" and "bot", then "Administrator" under "BOT PERMISSIONS"
+10. Now copy the url link, paste it into your tab and add it to your server
+
+Now you can run the python file with the google sheets API file and discord API file to turn on the bot.

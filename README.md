@@ -17,9 +17,32 @@ Install dependencies:
 ```
 pip install -r requirements.txt
 ```
+# Syncing with google sheets
+
+1. Go to google API website [https://console.cloud.google.com/](https://console.cloud.google.com/)
+2. In the top left corner, select "Select a project" then "NEW PROJECT"
+3. Enter any name for the project name (e.g., "elo bot") then select "CREATE"
+4. Now go back to the top left corner, select "Select a project" again and then click on the project you created
+5. On the left sidebar, select "APIs & Services" > "Enabled APIs & services" > "ENABLE APIS AND SERVICES"
+6. Scroll down and find "Google Drive API" and "Google Sheets API" click on both and press enable for both
+7. On the left sidebar, select "APIs & Services" > "Credentials" > "CREATE CREDENTIALS" > "Service Account"
+8. Give it any name (e.g., "elo bot") and leave the automatically generated ID (e.g., "elo-bot"), then press "CREATE AND CONTINUE"
+9. On the "Select a role" dropdown, select either "Owner" or "Editor" and then press DONE
+10. Return to the "Credentials" tab and then copy the email under "Service Accounts"
 
 Now create a google sheets with the following format for columns.
 
 *The names of each column are both case and space sensitive, so copy it exactly*
 
 ![sheets format](assets/sheets_format.png)
+
+11. Share the sheets to the copied service account email and grant it Editor permissions
+12. Now select the email under "Service Accounts", then go to the "KEYS" tab
+13. Press "ADD KEY" > "Create new key" > "JSON" > "CREATE", this should automatically download the .json file to your computer
+14. Now place this .json file in this same working directory/folder
+15. Inside the bot.py file at line 15, replace "GOOGLE API CREDENTIALS JSON FILE HERE" with the name of the .json file, keeping the quotation marks
+```
+(Line 15): creds = ServiceAccountCredentials.from_json_keyfile_name("GOOGLE API CREDENTIALS JSON FILE HERE", scope)
+```
+
+

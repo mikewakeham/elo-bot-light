@@ -69,4 +69,4 @@ bot.run("DISCORD API TOKEN HERE")
 9. Go to the URL Generator and select "applications.commands" and "bot", then "Administrator" under "BOT PERMISSIONS"
 10. Now copy the url link, paste it into your tab and add it to your server
 
-Now you can run the python file with the google sheets API file and discord API file to turn on the bot.
+Run the python file with the google sheets API file and discord API token to turn on the bot.

@@ -17,6 +17,9 @@ Install dependencies:
 ```
 pip install -r requirements.txt
 ```
+
+It is recommended to have an IDE such as Visual Studio Code to edit and run the bot.py file
+
 # Syncing with google sheets API
 
 1. Go to google API website [https://console.cloud.google.com/](https://console.cloud.google.com/)

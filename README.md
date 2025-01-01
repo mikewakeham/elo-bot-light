@@ -69,4 +69,14 @@ bot.run("DISCORD API TOKEN HERE")
 9. Go to the URL Generator and select "applications.commands" and "bot", then "Administrator" under "BOT PERMISSIONS"
 10. Now copy the url link, paste it into your tab and add it to your server
 
+# Extra changes
+
+- Change "DATABASE NAME" to the name of your spreads
+  
+```
+(Line 19) return client.open("DATABASE NAME").sheet1 
+```
+
+- Change lines 110-113 to the corresponding discord role IDs and roblox group ID
+ 
 Run the python file with the google sheets API file and discord API token to turn on the bot.

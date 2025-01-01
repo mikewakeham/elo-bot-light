@@ -16,7 +16,7 @@ def authenticate_google_sheets():
 
 
     client = gspread.authorize(creds)
-    return client.open("elo database").sheet1 
+    return client.open("DATABASE NAME").sheet1 
 
 def get_roblox_user_id(username):
     url = f"https://users.roblox.com/v1/users/search?keyword={username}"

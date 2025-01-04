@@ -43,7 +43,7 @@ Now create a google sheets with the following format for columns.
 12. Now select the email under "Service Accounts", then go to the "KEYS" tab
 13. Press "ADD KEY" > "Create new key" > "JSON" > "CREATE", this should automatically download the .json file to your computer
 14. Now place this .json file in this same working directory/folder
-15. Inside the bot.py file, replace "GOOGLE API CREDENTIALS JSON FILE HERE" with the name of the .json file, keeping the quotation marks
+15. Inside the bot file, replace "GOOGLE API CREDENTIALS JSON FILE HERE" with the name of the .json file, keeping the quotation marks
 ```
 creds = ServiceAccountCredentials.from_json_keyfile_name("GOOGLE API CREDENTIALS JSON FILE HERE", scope)
 ```
@@ -59,7 +59,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name("GOOGLE API CREDENTIALS
    - "MESSAGE CONTENT INTENT"
 4. For bot permissions, select "Administrator" and save changes
 5. To get your API token, stay on the Bot tab and press the "RESET TOKEN" button to get your token
-6. Copy the token and paste it into the last line of the bot.py file where it says "DISCORD API TOKEN HERE"
+6. Copy the token and paste it into the last line of the bot file where it says "DISCORD API TOKEN HERE"
 
 ```
 bot.run("DISCORD API TOKEN HERE")
@@ -71,12 +71,12 @@ bot.run("DISCORD API TOKEN HERE")
 
 # Extra changes
 
-- Change "DATABASE NAME" to the name of your spreads
+- Change "DATABASE NAME" to the name of your spreads in *authenticate_google_sheets()* function
   
 ```
 return client.open("DATABASE NAME").sheet1 
 ```
 
-- Change variables to the corresponding ID for each
+- Change constant variables to the corresponding ID for each at top of bot file
  
 Run the python file with the google sheets API file and discord API token to turn on the bot.

@@ -43,9 +43,9 @@ Now create a google sheets with the following format for columns.
 12. Now select the email under "Service Accounts", then go to the "KEYS" tab
 13. Press "ADD KEY" > "Create new key" > "JSON" > "CREATE", this should automatically download the .json file to your computer
 14. Now place this .json file in this same working directory/folder
-15. Inside the bot.py file at line 15, replace "GOOGLE API CREDENTIALS JSON FILE HERE" with the name of the .json file, keeping the quotation marks
+15. Inside the bot.py file, replace "GOOGLE API CREDENTIALS JSON FILE HERE" with the name of the .json file, keeping the quotation marks
 ```
-(Line 15): creds = ServiceAccountCredentials.from_json_keyfile_name("GOOGLE API CREDENTIALS JSON FILE HERE", scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name("GOOGLE API CREDENTIALS JSON FILE HERE", scope)
 ```
 
 # Discord API
@@ -74,9 +74,9 @@ bot.run("DISCORD API TOKEN HERE")
 - Change "DATABASE NAME" to the name of your spreads
   
 ```
-(Line 19) return client.open("DATABASE NAME").sheet1 
+return client.open("DATABASE NAME").sheet1 
 ```
 
-- Change lines 110-113 to the corresponding discord role IDs and roblox group ID
+- Change variables to the corresponding ID for each
  
 Run the python file with the google sheets API file and discord API token to turn on the bot.

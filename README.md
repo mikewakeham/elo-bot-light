@@ -7,13 +7,13 @@ This version does not use a proper database so it is only sufficient for light w
 Clone repository:
 
 ```
-git clone https://github.com/mikewakeham/roblox-elo-bot
+git clone https://github.com/mikewakeham/roblox-elo-bot-light
 ```
 
 Navigate to directory:
 
 ```
-cd roblox-elo-bot
+cd roblox-elo-bot-light
 ```
 
 Install dependencies:

@@ -1,6 +1,6 @@
 # roblox-elo-bot
 
-This version does not use a proper database so it is only sufficient for light workload, see the new github for the updated version
+This version does not use a proper database so it is only sufficient for light workload, see the new github for the updated version. The instructions for setting up the google sheets and discord API are applicable to the new version
 
 Clone repository:
 

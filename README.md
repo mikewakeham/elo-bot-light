@@ -2,6 +2,8 @@
 
 This version does not use a proper database so it is only sufficient for light workload, see the new github for the updated version. The instructions for setting up the google sheets and discord API are applicable to the new version. [new](https://github.com/mikewakeham/roblox-elo-bot)
 
+# Installation
+
 Clone repository:
 
 ```
@@ -19,8 +21,6 @@ Install dependencies:
 ```
 pip install -r requirements.txt
 ```
-
-It is recommended to have an IDE such as Visual Studio Code to edit and run the bot.py file
 
 # Syncing with google sheets API
 

@@ -1,5 +1,7 @@
 # roblox-elo-bot
 
+This version does not use a proper database so it is only sufficient for light workload, see the new github for the updated version
+
 Clone repository:
 
 ```
